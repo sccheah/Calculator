@@ -6,14 +6,14 @@ import calculator.model.Calculator;
 import javax.swing.*;
 import java.awt.*;
 
-public class OperationPanel extends JPanel {
+class OperationPanel extends JPanel {
     private Calculator calculator;
     private JTextField output;
     private JTextField input;
 
-    public OperationPanel(Calculator calculator, JTextField input, JTextField output) {
+    OperationPanel(JTextField input, JTextField output) {
         super(new GridLayout(1, 3));
-        this.calculator = calculator;
+        this.calculator = new Calculator();
         this.input = input;
         this.output = output;
         createComponents();

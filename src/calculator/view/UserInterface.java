@@ -7,11 +7,8 @@ import java.awt.*;
 
 public class UserInterface implements Runnable {
     private JFrame frame;
-    private Calculator calculator;
 
-    public UserInterface() {
-        calculator = new Calculator();
-    }
+    public UserInterface() { }
 
     @Override
     public void run() {
@@ -35,6 +32,6 @@ public class UserInterface implements Runnable {
 
         container.add(outputField);
         container.add(inputField);
-        container.add(new OperationPanel(calculator, inputField, outputField));
+        container.add(new OperationPanel(inputField, outputField));
     }
 }
