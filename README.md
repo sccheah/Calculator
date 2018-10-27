@@ -5,6 +5,10 @@ The project is separated into three portions following the MVC methedology.
 *Note I did not use version control for this project because it is a small, experimental project
  for fun and forgot to use it.*
 
+![Entry Screen](entry_screen.png)
+![Input Screen](input_screen.png)
+![Addition Operation](addition_op.png)
+
 ## Model
 ### Calculator.java
 The calculator class supports basic operations. The calculator only perform integer operations.
